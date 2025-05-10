@@ -5,17 +5,21 @@ jobs:
   build:
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main'
+    permissions:
+      contents: write
     steps:
       - name: checkout
         uses: actions/checkout@v4
         with:
-          submodules: true  # Fetch Hugo themes (true OR recursive)
+          submodules: true  # Fetch Hugo themes
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+      
+      - name: Create .nojekyll file
+        run: touch .nojekyll
+      
       - name: build_and_deploy
         uses: shalzz/zola-deploy-action@master
         env:
-          # Target branch
           PAGES_BRANCH: gh-pages
-          # Provide GitHub token
           TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
+          BUILD_FLAGS: --drafts
