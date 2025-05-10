@@ -2,7 +2,7 @@
 title = ""
 description = ""
 date = 2025-05-09
-draft = true
+draft = false
 
 [taxonomies]
 categories = ["one"]
