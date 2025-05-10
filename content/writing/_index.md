@@ -1,6 +1,6 @@
 +++
-title = "writing"
-description = "cool stuff I thought about"
+title = "Writing"
+description = "Cool stuff I thought about"
 sort_by = "date"
 template = "blog.html"
 page_template = "post.html"
@@ -10,8 +10,8 @@ generate_feeds = true
 [extra]
 lang = "en"
 
-title = "writing"
-subtitle = "cool stuff I thought about"
+title = "Writing"
+subtitle = "Cool stuff I thought about"
 
 date_format = "%d %B %Y"
 
