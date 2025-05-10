@@ -10,7 +10,7 @@ footer = false
 # If you don't want to display id/bio/avatar, simply comment out that line
 name = "Zara Zong"
 id = "minifinity"
-bio = "\"It only takes two facing mirrors to build a labyrinth.\" ― Jorge Luis Borges"
+# bio = ""
 # avatar = "img/avatar.webp"
 links = [
     { name = "GitHub", icon = "github", url = "https://github.com/minifinity" },
