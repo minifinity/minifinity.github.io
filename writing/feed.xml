@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title>Writing</title>
+	<subtitle>Cool stuff I thought about</subtitle>
+	<link href="https://minifinity.github.io/writing/feed.xml" rel="self" type="application/atom+xml"/>
+    <link href="https://minifinity.github.io/writing/"/>
+	<updated>2025-05-09T00:00:00+00:00</updated>
+	<id>https://minifinity.github.io/writing/feed.xml</id>
+	<entry xml:lang="en">
+		<title>First Post</title>
+		<published>2025-05-09T00:00:00+00:00</published>
+		<updated>2025-05-09T00:00:00+00:00</updated>
+		<link href="https://minifinity.github.io/writing/first-post/" type="text/html"/>
+		<id>https://minifinity.github.io/writing/first-post/</id>
+		<content type="html">&lt;p&gt;Test&lt;&#x2F;p&gt;
+</content>
+	</entry>
+</feed>
