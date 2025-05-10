@@ -2,6 +2,7 @@
 title = "First Post"
 description = "test"
 date = 2025-05-09
+# updated = 2025-05-09
 draft = false
 
 [taxonomies]
@@ -21,4 +22,4 @@ featured = false
 reaction = false
 +++
 
-First post!
+Test
