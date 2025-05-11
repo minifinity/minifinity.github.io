@@ -25,7 +25,7 @@ reaction = false
 This summer, I'll be working with the [igraph](https://igraph.org/) team on their open-source network analysis library through Google Summer of Code. I'm thrilled for the opportunity to learn from two dedicated mentors and to dive into a topic I've been fascinated by: network science and graph theory.
 
 ## Project
-The objective is to expand on igraph’s current functionality to more flexibly work with **degree-constrained null models**. Null models are useful because they provide a baseline for determining whether graphs of interest display “non-trivial features” – in other words, they offer a way to define a "generic" or "random" graph so observed features in network of interest can be compared against a meaningful reference point. 
+The objective is to expand on igraph’s current functionality to more flexibly work with **degree-constrained null models**. [Null models](https://en.wikipedia.org/wiki/Null_model) are useful because they provide a baseline for determining whether graphs of interest display “non-trivial features” – in other words, they offer a way to define a "generic" or "random" graph so observed features in network of interest can be compared against a meaningful reference point. 
 
 When constructing such a null model, it's important to preserve certain properties of the original graph so that comparisons remain relevant. One potential preserved property is the **degree sequence**.
 
@@ -53,6 +53,7 @@ Three functionalities will be extended to work with more graph structures:
     * Implementing improved methods for construction algorithms
     
 * **Rewiring: randomizing edges while preserving a degree sequence**
+    
     The final step is to generate random graphs that still match the degree sequence of the original. 
 
     igraph’s current `rewire()` function handles a limited set of graph types and can’t reach all possible graphs with the same in- and out-degree sequences. The plan is to:
@@ -64,6 +65,11 @@ Three functionalities will be extended to work with more graph structures:
     * Make it possible to rewire graphs while preserving connectivity, using a more efficient Viger–Latapy method
 
 At its core, null models help researchers ask better questions about networks – not just *what* it looks like, but *why* it looks that way, and whether that is meaningful or expected. By improving how igraph handles degree-constrained null models, I hope to make a small but practical contribution to network science.
+
+> Much of this work was informed by a paper by one of my mentors, Szabolcs Horvát, and Carl D Modes: *“Connectedness matters: construction and exact random sampling of connected
+networks.”* (DOI: 10.1088/2632-072X/abced5).
+
+---
 
 ## More Thoughts
 I can't recall how or why I became interested in networks and graphs. My hypothesis is that it stemmed from the abundance of time I had to traverse Wikipedia rabbit holes during the COVID pandemic. Often, I'd start on a page that wasn't exactly what I was looking for – maybe the term was too broad or too narrow, or only tangentially related. But unless you were on a page with less than a handful of links, you would eventually find a link to something that felt like it pointed in the right direction, or at least was the closest of the available links to the right direction. 
