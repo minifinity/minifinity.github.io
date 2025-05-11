@@ -15,7 +15,7 @@ subtitle = "\"It only takes two facing mirrors to build a labyrinth.\" ― Jorge
 
 date_format = "%e %B %Y"
 
-categorized = false # posts can be categorized
+categorized = true # posts can be categorized
 back_to_top = true # show back-to-top button
 toc = true # show table-of-contents
 comment = false # enable comment

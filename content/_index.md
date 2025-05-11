@@ -25,4 +25,4 @@ recent_more_text = "more »"
 date_format = "%b %-d, %Y"
 +++
 
-Hi, I'm Zara. I study theoretical computer science at Stanford University. This site collects writing, work, and wonderings.
+Hi! I'm Zara. I study theoretical computer science at Stanford University. This site collects writing, work, and wanderings.
