@@ -22,7 +22,7 @@ featured = false
 reaction = false
 +++
 
-This summer, I'll be working with the [igraph](https://igraph.org/) team on their open-source network analysis library through Google Summer of Code. I'm thrilled for the opportunity to learn from two dedicated mentors and to dive into a topic I've been fascinated by: network science and graph theory.
+This summer, I'll be working with the [igraph](https://igraph.org/) team on their open-source network analysis library through [Google Summer of Code](https://summerofcode.withgoogle.com/). I'm thrilled for the opportunity to learn from two dedicated mentors and to dive into a topic I've been fascinated by: network science and graph theory.
 
 ## Project
 The objective is to expand on igraph’s current functionality to more flexibly work with **degree-constrained null models**. [Null models](https://en.wikipedia.org/wiki/Null_model) are useful because they provide a baseline for determining whether graphs of interest display “non-trivial features” – in other words, they offer a way to define a "generic" or "random" graph so observed features in network of interest can be compared against a meaningful reference point. 
