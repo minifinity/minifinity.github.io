@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title>Writing</title>
+	<subtitle>Cool stuff I thought about</subtitle>
+	<link href="https://minifinity.github.io/writing/feed.xml" rel="self" type="application/atom+xml"/>
+    <link href="https://minifinity.github.io/writing/"/>
+	<updated>2025-05-10T00:00:00+00:00</updated>
+	<id>https://minifinity.github.io/writing/feed.xml</id>
+	<entry xml:lang="en">
+		<title>Node to Joy</title>
+		<published>2025-05-10T00:00:00+00:00</published>
+		<updated>2025-05-10T00:00:00+00:00</updated>
+		<link href="https://minifinity.github.io/writing/node-to-joy/" type="text/html"/>
+		<id>https://minifinity.github.io/writing/node-to-joy/</id>
+		<content type="html">&lt;p&gt;This summer, I&#x27;ll be working with the &lt;a rel=&quot;nofollow noreferrer&quot; href=&quot;https:&#x2F;&#x2F;igraph.org&#x2F;&quot;&gt;igraph&lt;&#x2F;a&gt; team on their open-source network analysis library through &lt;a rel=&quot;nofollow noreferrer&quot; href=&quot;https:&#x2F;&#x2F;summerofcode.withgoogle.com&#x2F;&quot;&gt;Google Summer of Code&lt;&#x2F;a&gt;. I&#x27;m thrilled for the opportunity to learn from two dedicated mentors and to dive into a topic I&#x27;ve been fascinated by: network science and graph theory.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;project&quot;&gt;Project&lt;a class=&quot;zola-anchor&quot; href=&quot;#project&quot; aria-label=&quot;Anchor link for: project&quot; style=&quot;visibility: hidden;&quot;&gt;&lt;&#x2F;a&gt;
+&lt;&#x2F;h2&gt;
+&lt;p&gt;The objective is to expand on igraph’s current functionality to more flexibly work with &lt;strong&gt;degree-constrained null models&lt;&#x2F;strong&gt;. &lt;a rel=&quot;nofollow noreferrer&quot; href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Null_model&quot;&gt;Null models&lt;&#x2F;a&gt; are useful because they provide a baseline for determining whether graphs of interest display “non-trivial features” – in other words, they offer a way to define a &quot;generic&quot; or &quot;random&quot; graph so observed features in network of interest can be compared against a meaningful reference point.&lt;&#x2F;p&gt;
+&lt;p&gt;When constructing such a null model, it&#x27;s important to preserve certain properties of the original graph so that comparisons remain relevant. One potential preserved property is the &lt;strong&gt;degree sequence&lt;&#x2F;strong&gt;.&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A &lt;strong&gt;degree sequence&lt;&#x2F;strong&gt; is a list of the number of edges connected to each node in a graph. For example, if a graph has six nodes and they each have 1, 3, 3, 2, 2, and 2 edges connected to them, then the &lt;em&gt;degree sequence&lt;&#x2F;em&gt; is [1, 3, 3, 2, 2, 2]. This captures the distribution of &quot;connectedness&quot; across the graph.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;Preserving the degree sequence ensures that the null model retains the same distribution of connectivity, making a comparison more meaningful.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;details&quot;&gt;Details&lt;a class=&quot;zola-anchor&quot; href=&quot;#details&quot; aria-label=&quot;Anchor link for: details&quot; style=&quot;visibility: hidden;&quot;&gt;&lt;&#x2F;a&gt;
+&lt;&#x2F;h3&gt;
+&lt;p&gt;Three functionalities will be extended to work with more graph structures:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Graphicality: can a graph be built from this degree sequence?&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;The first step in working with a degree-constrained null model is checking whether a graph &lt;em&gt;can&lt;&#x2F;em&gt; be constructed from a given degree sequence, or checking for &quot;graphicality.&quot;&lt;&#x2F;p&gt;
+&lt;p&gt;igraph already includes &lt;code&gt;is_graphical()&lt;&#x2F;code&gt; and &lt;code&gt;is_bigraphical()&lt;&#x2F;code&gt; functions that support various combinations of edge types (like loops or multi-edges), both directed and undirected graphs, and bipartite graphs. However, there&#x27;s currently no efficient way to check graphicality for connected graphs. This can be extended from &lt;code&gt;is_potentially_connected()&lt;&#x2F;code&gt;, ideally in linear time.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Construction: building a graph that matches a degree sequence&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Once we know a graph is possible, the next step is to actually build one.&lt;&#x2F;p&gt;
+&lt;p&gt;igraph’s &lt;code&gt;realize_degree_sequence()&lt;&#x2F;code&gt; can already generate graphs across different types (simple, multigraphs, with or without loops), and it has a companion for bipartite graphs. This project will build on that foundation in two ways:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Adding support for graphs with loops but no multi-edges (a currently missing case)&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Implementing improved methods for construction algorithms&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Rewiring: randomizing edges while preserving a degree sequence&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;The final step is to generate random graphs that still match the degree sequence of the original.&lt;&#x2F;p&gt;
+&lt;p&gt;igraph’s current &lt;code&gt;rewire()&lt;&#x2F;code&gt; function handles a limited set of graph types and can’t reach all possible graphs with the same in- and out-degree sequences. The plan is to:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Add support for more combinations of edge types&lt;&#x2F;li&gt;
+&lt;li&gt;Support rewiring for bipartite graphs while preserving partitions&lt;&#x2F;li&gt;
+&lt;li&gt;Enable a three-edge swap method for directed graphs to ensure all valid graphs can be reached with equal probability&lt;&#x2F;li&gt;
+&lt;li&gt;Add flexibility to preserve only in-degree or only out-degree, depending on use case&lt;&#x2F;li&gt;
+&lt;li&gt;Make it possible to rewire graphs while preserving connectivity, using a more efficient Viger–Latapy method&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;At its core, null models help researchers ask better questions about networks – not just &lt;em&gt;what&lt;&#x2F;em&gt; it looks like, but &lt;em&gt;why&lt;&#x2F;em&gt; it looks that way, and whether that is meaningful or expected. By improving how igraph handles degree-constrained null models, I hope to make a small but practical contribution to network science.&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Much of this work was informed by a paper by one of my mentors, Szabolcs Horvát, and Carl D Modes: &lt;em&gt;“Connectedness matters: construction and exact random sampling of connected
+networks.”&lt;&#x2F;em&gt; (DOI: 10.1088&#x2F;2632-072X&#x2F;abced5).&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;more-thoughts&quot;&gt;More Thoughts&lt;a class=&quot;zola-anchor&quot; href=&quot;#more-thoughts&quot; aria-label=&quot;Anchor link for: more-thoughts&quot; style=&quot;visibility: hidden;&quot;&gt;&lt;&#x2F;a&gt;
+&lt;&#x2F;h2&gt;
+&lt;p&gt;I can&#x27;t recall how or why I became interested in networks and graphs. My hypothesis is that it stemmed from the abundance of time I had to traverse Wikipedia rabbit holes during the COVID pandemic.&lt;&#x2F;p&gt;
+&lt;p&gt;Often, I&#x27;d start on a page that wasn&#x27;t exactly what I was looking for – maybe the term was too broad or too narrow, or only tangentially related. But unless you were on a page with less than a handful of links, you would eventually find a link to something that felt like it pointed in the right direction, or at least was the closest of the available links to the right direction.&lt;&#x2F;p&gt;
+&lt;p&gt;Maybe I was drawn to the idea that we carry around a kind of &quot;semantic distance&quot; in our heads – a fuzzy intuition for how ideas are related, even if we can&#x27;t express it precisely. Maybe I just wanted to beat all my friends at the &lt;a rel=&quot;nofollow noreferrer&quot; href=&quot;https:&#x2F;&#x2F;wikispeedrun.org&#x2F;&quot;&gt;Wikipedia speedrun&lt;&#x2F;a&gt;, a shortest-path problem in disguise. Or maybe it all started when I came across &lt;a rel=&quot;nofollow noreferrer&quot; href=&quot;https:&#x2F;&#x2F;youtu.be&#x2F;-llumS2rA8I?si=choIrC7Ch_6IObbN&quot;&gt;the most aesthetically-arresting graph theoretic analysis&lt;&#x2F;a&gt; explaining &lt;a rel=&quot;nofollow noreferrer&quot; href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Wikipedia:Getting_to_Philosophy&quot;&gt;why most Wikipedia pages eventually link back to &quot;Philosophy,&quot;&lt;&#x2F;a&gt; and I was just drunk on the visuals.&lt;&#x2F;p&gt;
+&lt;p&gt;In any case, I began my undergraduate study in computer science largely owing to this interest in graphs, networks, and structural abstractions which, while not the most conventional starting point, drew me into computer science and discrete mathematics in an organic way. There is no shortage of nodes and edges in everyday life. Social media connections link people. Highways systems weave cities. Neurons wire our own thoughts and consciousness.&lt;&#x2F;p&gt;
+&lt;p&gt;Formalities aside, the idea behind networks – that the relationships between things are just as interesting as the things themselves – is one that seemingly underpins both social and natural worlds. The more I learn about them, the more I am awed by their ability to model complexities with such minimal ingredients.&lt;&#x2F;p&gt;
+</content>
+	</entry>
+</feed>
