@@ -27,6 +27,6 @@ date_format = "%b %-d, %Y"
 
 Welcome, 欢迎!
 
-I'm studying theoretical computer science at Stanford University. Outside of school, you can find me in a book, at the piano, or [blundering rooks](https://www.chess.com/member/minifinity).
+I'm studying computer science at Stanford University. Outside of school, you can find me at the piano or over a chessboard.
 
 This site collects writing, work, and wanderings.
