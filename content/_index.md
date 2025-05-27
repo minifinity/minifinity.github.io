@@ -25,4 +25,8 @@ recent_more_text = "more »"
 date_format = "%b %-d, %Y"
 +++
 
-Hi! I'm Zara. I'm studying theoretical computer science at Stanford University. This site collects writing, work, and wanderings.
+Welcome, 欢迎!
+
+I'm studying theoretical computer science at Stanford University. Outside of school, you can find me in a book, at the piano, or [blundering rooks](https://www.chess.com/member/minifinity).
+
+This site collects writing, work, and wanderings.
