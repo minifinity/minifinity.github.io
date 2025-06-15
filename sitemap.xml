@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://minifinity.github.io/</loc>
+    </url>
+    <url>
+        <loc>https://minifinity.github.io/categories/</loc>
+    </url>
+    <url>
+        <loc>https://minifinity.github.io/categories/gsoc/</loc>
+    </url>
+    <url>
+        <loc>https://minifinity.github.io/tags/</loc>
+    </url>
+    <url>
+        <loc>https://minifinity.github.io/writing/</loc>
+    </url>
+    <url>
+        <loc>https://minifinity.github.io/writing/node-to-joy/</loc>
+        <lastmod>2025-05-10</lastmod>
+    </url>
+</urlset>
