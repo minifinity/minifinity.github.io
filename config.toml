@@ -5,9 +5,9 @@
 #
 #=========================================================================================
 
-base_url = "https://example.com"
-title = "xxxx"
-description = "xxxx xxxx xxxx"
+base_url = "https://minifinity.github.io/"
+title = "Zara Zong"
+description = "Zara Zong's personal website."
 default_language = "en"
 theme = "serene"
 output_dir = "public"
