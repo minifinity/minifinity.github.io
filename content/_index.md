@@ -26,6 +26,6 @@ date_format = "%b %-d, %Y"
 
 I am an undergraduate in computer science at Stanford University. My interests are broadly in systems and theory.
 
-Outside of school, I play the piano, dabble in competitive programming, and build ergo mech keyboards.
+Outside of school, I play the piano, build ergo mech keyboards, and dabble in competitive programming.
 
 This site is meant to be a collection of cool stuff. Feel free to poke around!
