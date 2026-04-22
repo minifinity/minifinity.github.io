@@ -33,4 +33,4 @@ In that order of fluency. And a few Duolingo courses' worth of Japanese and Germ
 My favorite key is F-major!
 
 **Useless talent**: I'm a half-decent [GeoGuessr player](https://www.geoguessr.com/user/68cb44ae5109ce1c18e7dcd5) \
-I know Ghana tape, but I will go Iceland on Ulaanbaatar. I also help run [Stanford GeoGuessr](https://www.instagram.com/stanfordgeogames/).
+I know Ghana tape, but I will go Iceland on Ulaanbaatar. I also help run [Stanford GeoGuessr](https://www.stanfordacm.org/geoguessr).
