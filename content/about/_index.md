@@ -17,17 +17,17 @@ comment = false
 reaction = false
 +++
 
-**Names**: 子钰, Zara \
+**Name**: 子钰, Zara \
 The former is given, the latter [I chose](https://nameberry.com/blog/my-name-my-story-zara).
 
-**Hometown**: Bellevue, WA \
-I grew up here. I'm a big fan of rain, flannel shirts, and coffee.
+**Hometown**: Seattle, WA \
+I grew up here, and I love rain.
 
 **Hometown #2**: Qingdao, China \
-I was born here. Yes, we're known for the [beer](https://en.wikipedia.org/wiki/Tsingtao_Brewery).
+I was born here. We're known for the [beer](https://en.wikipedia.org/wiki/Tsingtao_Brewery).
 
-**Languages**: English, Mandarin, C++, Python, Latin \
-In that order of fluency. And a few Duolingo courses' worth of Japanese and German.
+**Languages**: English, Mandarin, C++, Rust, Python, Latin \
+In that order of fluency.
 
 **Secret talent**: Perfect pitch \
 My favorite key is F-major!
