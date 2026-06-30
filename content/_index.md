@@ -24,7 +24,7 @@ recent_more_text = "more »"
 date_format = "%b %-d, %Y"
 +++
 
-I am an undergraduate in computer science at Stanford University. My interests are broadly in programming languages and compilers.
+I'm an undergraduate in computer science at Stanford University. My current interests are in programming languages and compilers.
 
 Outside of school, I like all things art, and dabble in competitive programming.
 
