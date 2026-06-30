@@ -1,16 +1,16 @@
-# serene v5.5.0
+# serene v5.6.3
 #
 # - docs: https://github.com/isunjn/serene/blob/latest/USAGE.md
 # - check for updates: https://github.com/isunjn/serene/releases
 #
 #=========================================================================================
 
-base_url = "https://minifinity.github.io/"
+base_url = "https://minifinity.github.io"
 title = "Zara Zong"
-description = "Zara Zong's personal website."
+description = "Zara's website."
 default_language = "en"
 theme = "serene"
-output_dir = "docs"
+output_dir = "public"
 compile_sass = true
 minify_html = false # Keep this false, as it may cause issues with some styles
 build_search_index = false # Keep this false, search is temporarily unsupported
@@ -19,18 +19,17 @@ feed_filenames = ["feed.xml"] # "feed.xml" | "atom.xml" | "rss.xml", read docs f
 taxonomies = [{ name = "tags" }, { name = "categories" }]
 
 [markdown]
-highlight_code = true
-highlight_theme = "css"
-extra_syntaxes_and_themes = ["themes/serene/highlight_themes"]
-highlight_themes_css = [
-  { theme = "serene-light", filename = "hl-light.css" },
-  { theme = "serene-dark", filename = "hl-dark.css" },
-]
 render_emoji = false
 external_links_target_blank = false
 external_links_no_follow = true
 external_links_no_referrer = true
 smart_punctuation = false
+github_alerts = true
+
+[markdown.highlighting]
+style = "class"
+light_theme = "github-light"
+dark_theme = "github-dark"
 
 [slugify]
 paths = "on"
