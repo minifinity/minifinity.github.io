@@ -1,6 +1,6 @@
 +++
 title = "About"
-description = "About minifinity"
+description = "About Zara"
 template = "prose.html"
 insert_anchor_links = "none"
 
@@ -8,7 +8,7 @@ insert_anchor_links = "none"
 lang = 'en'
 
 title = "About"
-subtitle = "你好, and hello!"
+subtitle = "Hello, World!"
 
 math = false
 mermaid = false
@@ -17,20 +17,16 @@ comment = false
 reaction = false
 +++
 
-**Name**: 子钰, Zara \
-The former is given, the latter [I chose](https://nameberry.com/blog/my-name-my-story-zara).
+**Top 2 favorite books** 
+* *A Gentleman in Moscow* - Amor Towles
+* *Labyrinths* - Jorge Luis Borges
 
-**Hometown**: Seattle, WA \
-I grew up here. I love mountains over a pristine blue lake, the aroma of pine, and the perennial rain.
+**Top 2 favorite programming languages**
+* Rust
+* C++
 
-**Hometown #2**: Qingdao, China \
-I was born here. We're known for the [beer](https://en.wikipedia.org/wiki/Tsingtao_Brewery).
+**Top 3 (recent) favorite songs**
+* `I Know The End' - Phoebe Bridgers
+* `All I Wanted' - Paramore
+* `Paris, Texas' - Lana Del Rey
 
-**Languages**: English, Mandarin, C++, Rust, Python, Latin \
-In that order of fluency.
-
-**Secret talent**: I'm a half-decent [GeoGuessr player](https://www.geoguessr.com/user/68cb44ae5109ce1c18e7dcd5) \
-I know Ghana tape, but I will go Iceland on Ulaanbaatar. I also help run [Stanford GeoGuessr](https://www.stanfordacm.org/geoguessr).
-
-**Useless talent**: Perfect pitch \
-I can tell you the pitch of your chair scooching across the floor, and my favorite key is F-major.
