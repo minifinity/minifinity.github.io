@@ -24,8 +24,6 @@ recent_more_text = "more »"
 date_format = "%b %-d, %Y"
 +++
 
-I'm an undergraduate in computer science at Stanford University. My current interests are in programming languages, compilers, and algorithms.
+Hello! I'm an undergraduate in computer science at Stanford University. My current interests are broadly in algorithms, optimization, programming languages, and compilers.
 
-I'm also an avid pianist and crocheter.
-
-This site is a collection of stuff I find cool. Welcome!
+Outside of academics, I enjoy writing and playing chess.
