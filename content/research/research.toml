@@ -1,0 +1,8 @@
+layout = "row"
+flow = "stack"
+
+[[item]]
+title = "How To Compile WebAssembly -> C++ In A Single Pass"
+subtitle = "Poster"
+link = "/research/poster.pdf"
+badge = "CURIS 2026"
