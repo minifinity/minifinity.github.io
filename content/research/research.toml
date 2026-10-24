@@ -1,8 +1,8 @@
-layout = "row"
+layout = "card"
 flow = "stack"
 
 [[item]]
 title = "How To Compile WebAssembly -> C++ In A Single Pass"
-subtitle = "Poster"
+subtitle = "Zara Zong, Keith Winstein"
 link = "/research/poster.pdf"
 badge = "CURIS 2026"
